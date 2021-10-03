@@ -1,6 +1,6 @@
 paths:
   "/README.md":
-    clonrVariable: "What do you want the value of the variable to be?"
+    clonr_variable: "What do you want the value of the variable to be?"
   "/LICENSE":
     owner: Who is the owner of the project?
     date: When did your Copyright begin?

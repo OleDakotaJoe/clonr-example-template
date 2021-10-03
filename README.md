@@ -2,4 +2,5 @@
 
 Example template for clonr CLI
 
-This Readme has a regex in it {@clonr{exampleVariable}}
+This Readme has a variale in it.
+Hello, {@clonr{clonr_variable}}
