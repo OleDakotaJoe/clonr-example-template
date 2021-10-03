@@ -1,9 +1,9 @@
 paths:
-  - /README.md:
-      - clonrVariable:
-          question: "What do you want the value of the variable to be?"
-  - /LICENSE:
-      - owner:
-          question: "Who is the owner of the project?"
-      - date:
-          question: "When did your Copyright begin?"
+  /README.md:
+    - clonrVariable:
+        question: "What do you want the value of the variable to be?"
+  /LICENSE:
+    - owner:
+        question: "Who is the owner of the project?"
+    - date:
+        question: "When did your Copyright begin?"
