@@ -3,26 +3,21 @@ paths:
     location: /README.md
     variables:
       clonr_variable:
-        placeholer: date
         question: What do you want the value of the variable to be?
   LICENSE:
     location: /LICENSE
     variables:
       owner:
-        placeholer: owner
         question: Who is the owner of the project?
       date:
-        placeholer: date
         question: When did your Copyright begin?
   testDir/README.md:
     location: /testDir/README.md
     variables:
       testdir-var:
-        placeholer: testdir-var
         question: What variable do you want for testDir?
   test-dir/README.md:
     location: /test-dir/README.md
     variables:
       test-dir-var:
-        placeholer: test-dir-var
         question: What about this one, test-dir?
