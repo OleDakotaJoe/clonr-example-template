@@ -1,18 +1,18 @@
 paths:
   README.md:
-     location: /README.md
-     variables: 
-       - clonr_variable: What do you want the value of the variable to be?
+    location: /README.md
+    variables:
+      - clonr_variable: What do you want the value of the variable to be?
   LICENSE:
     location: /LICENSE
-    variables: 
+    variables:
       - owner: Who is the owner of the project?
       - date: When did your Copyright begin?
-  testDir/README.md: 
+  testDir/README.md:
     location: /testDir/README.md
-    variables: 
+    variables:
       - testdir-var: What variable do you want for testDir?
   test-dir/README.md:
-      location: /test-dir/README.md
-      variables: 
-        - test-dir-var: What about this one, test-dir?
+    location: /test-dir/README.md
+    variables:
+      - test-dir-var: What about this one, test-dir?
