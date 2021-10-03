@@ -1,2 +1,10 @@
-test:
-  value: "hello"
+paths:
+  - "/README.md"
+    - variable: "clonrVariable"
+        question: "What do you want the value of the variable to be?"
+  - "/LICENSE"
+    - variable: "owner"
+        question: "Who is the owner of the project?"
+    - variable: "date"
+        question: "When did your Copyright begin?"  
+
