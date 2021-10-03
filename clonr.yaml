@@ -1,6 +1,9 @@
 paths:
-  "/README.md":
+  /README.md:
     clonr_variable: "What do you want the value of the variable to be?"
-  "/LICENSE":
+  /LICENSE:
     owner: Who is the owner of the project?
     date: When did your Copyright begin?
+  /testDir/README.md:
+    testdir-var: What variable do you want for testDir?
+    test-dir-var: What about this one, test-dir?
