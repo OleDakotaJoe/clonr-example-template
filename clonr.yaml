@@ -1,23 +1,25 @@
 paths:
-  README.md:
-    location: /README.md
+  package.json:
+    location: /package.json
     variables:
-      clonr_variable:
-        question: What do you want the value of the variable to be?
-  LICENSE:
-    location: /LICENSE
+      project-name:
+        question: What should the project name be?
+      project-version:
+        question: What should the project's starting version be?
+      project-name:
+        question: Pleae provide a one line description for the project.
+      author:
+        question: Who is the author of the project?
+
+  package-lock.json:
+    location: /package-lock.json
     variables:
-      owner:
-        question: Who is the owner of the project?
-      date:
-        question: When did your Copyright begin?
-  testDir/README.md:
-    location: /testDir/README.md
+      project-name:
+        question: What should the project name be? This value should be the same as what you gave for project-name previously.
+  src/App.js:
+    location: /src/App.js
     variables:
-      testdir-var:
-        question: What variable do you want for testDir?
-  test-dir/README.md:
-    location: /test-dir/README.md
-    variables:
-      test-dir-var:
-        question: What about this one, test-dir?
+      hello-world-message:
+        question: What do you want your hello world message to be?
+
+
