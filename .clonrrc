@@ -1,9 +1,13 @@
-paths:
+globals:
+  variables:
+    project-name:
+      question: What should the project name be?
+
+templates:
   package.json:
     location: /package.json
     variables:
-      project-name:
-        question: What should the project name be?
+      globals:
       project-version:
         question: What should the project's starting version be?
       project-description:
@@ -13,9 +17,8 @@ paths:
 
   package-lock.json:
     location: /package-lock.json
-    variables:
-      project-name:
-        question: What should the project name be? This value should be the same as what you gave for project-name previously.
+    globals:
+
   src/App.js:
     location: /src/App.js
     variables:
