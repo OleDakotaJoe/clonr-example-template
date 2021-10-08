@@ -17,7 +17,8 @@ templates:
 
   package-lock.json:
     location: /package-lock.json
-    globals:
+    variables:
+      globals:
 
   src/App.js:
     location: /src/App.js
