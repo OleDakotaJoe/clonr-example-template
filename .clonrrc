@@ -10,6 +10,7 @@ templates:
       globals:
       project-version:
         question: What should the project's starting version be?
+        default: 1.0.0
       project-description:
         question: Pleae provide a one line description for the project.
       author:
