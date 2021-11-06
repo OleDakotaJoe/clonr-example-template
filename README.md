@@ -1,21 +1,22 @@
 {@clonr{%
-    
-    // # This is a clonr template 
+    /*
+  # This is a clonr template 
 
-    // To clone this repository download clonr by running:
+  To clone this repository download clonr by running:
 
-    // `npm install -g go-clonr` 
+  `npm install -g go-clonr` 
 
-    // `go-clonr install`
+  `go-clonr install`
 
-    // `clonr clone https://github.com/OleDakotaJoe/clonr.git`
+  `clonr clone https://github.com/OleDakotaJoe/clonr.git`
 
-    // If you do not have npm installed on your machine, check out [the clonr github](https://github.com/oledakotajoe/clonr) for other installation methods.
-
+  If you do not have npm installed on your machine, check out [the clonr github](https://github.com/oledakotajoe/clonr) for other installation methods.
+    */
 
     clonrResult = "" 
 
 %}/clonr} 
+
 # Barebones React App
 
 Just wanted a simple barebones React application boilerplate that:
