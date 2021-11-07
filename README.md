@@ -15,9 +15,7 @@
 
     clonrResult = "" 
 
-%}/clonr} 
-
-# Barebones React App
+%}/clonr}# Barebones React App
 
 Just wanted a simple barebones React application boilerplate that:
 
