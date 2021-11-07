@@ -2,6 +2,12 @@ globals:
   variables:
     project-name:
       question: What should the project name be?
+      validation: "^[\\w-]+$"
+    cleanup-clonr:
+      question: Do you want to remove the .clonr-config.yml file? 
+      choices: 
+        - "yes"
+        - "no"
 
 templates:
   package.json:
@@ -11,6 +17,7 @@ templates:
       project-version:
         question: What should the project's starting version be?
         default: 1.0.0
+        validation: "^v?\\d+\\.\\d+\\.\\d+$"
       project-description:
         question: Pleae provide a one line description for the project.
       author:
@@ -26,3 +33,18 @@ templates:
     variables:
       hello-world-message:
         question: What do you want your hello world message to be?
+      app-preference:
+        question: Do you prefer class components or functional components?
+        choices:
+          - Class
+          - Function
+
+  # Clean up clonr files
+  .clonr-config.yml:
+    location: /.clonr-config.yml
+    condition: clonrResult = !(getClonrVar("globals[cleanup-clonr]") === "yes")
+  README.md:
+    location: /README.md
+    variables:
+      test:
+        question: delete?
