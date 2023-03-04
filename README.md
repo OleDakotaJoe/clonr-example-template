@@ -39,7 +39,7 @@ NOTE: This project is clone of [niftymonkey]'s [barebones-react-app] repo.
 1. `npm install` - to install the dependencies
 1. `npm run dev` - to run the application in dev mode (using webpack-dev-server)
 1. Open up http://localhost:3000 to view the app
-1. Open up `src/App.js` and hack away. Hit save and enjoy the magic!
+1. Open up `src/root.component.js` and hack away. Hit save and enjoy the magic!
 
 ## Other useful commands
 

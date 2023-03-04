@@ -1,0 +1,24 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^example\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.example\.com$ [OR]
+RewriteCond %{HTTPS} ^example\.com$ [OR]
+RewriteCond %{HTTPS} ^www\.example\.com$ 
+RewriteRule ^(.*)$ "https\:\/\/www\.example\.com\/$1" [R=301,L]
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+RewriteOptions inherit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit

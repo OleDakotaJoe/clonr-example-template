@@ -8,6 +8,23 @@ globals:
       choices: 
         - "yes"
         - "no"
+    typescript:
+      question: Do you want to use TypeScript?
+      choices:
+        - "yes"
+        - "no"
+    pwa:
+      question: Do you want to set up a PWA?
+      choices:
+        - "yes"
+        - "no"
+    hello-world-message:
+      question: What do you want your hello world message to be?
+    app-preference:
+      question: Do you prefer class components or functional components?
+      choices:
+        - Class
+        - Function
 
 templates:
   package.json:
@@ -19,25 +36,32 @@ templates:
         default: 1.0.0
         validation: "^v?\\d+\\.\\d+\\.\\d+$"
       project-description:
-        question: Pleae provide a one line description for the project.
+        question: Please provide a one line description for the project.
       author:
         question: Who is the author of the project?
+      license:
+        question: What type of license?
 
-  package-lock.json:
-    location: /package-lock.json
+  src/root.component.js:
+    location: /src/root.component.js
+    condition: clonrResult = !(getClonrVar("globals[typescript]") === "yes")
     variables:
-      globals:
+      test:
+        question: Press Enter.
 
-  src/App.js:
-    location: /src/App.js
+
+  src/root.component.tsx:
+    location: /src/root.component.tsx
+    condition: clonrResult = (getClonrVar("globals[typescript]") === "yes")
     variables:
-      hello-world-message:
-        question: What do you want your hello world message to be?
-      app-preference:
-        question: Do you prefer class components or functional components?
-        choices:
-          - Class
-          - Function
+      test:
+        question: Press Enter.
+
+  src/index.js:
+    location: /src/index.js
+    variables:
+      test:
+        question: Press Enter.
 
   # Clean up clonr files
   .clonr-config.yml:
@@ -47,4 +71,4 @@ templates:
     location: /README.md
     variables:
       test:
-        question: delete?
+        question: Press Enter.
